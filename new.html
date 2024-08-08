@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Landing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<html>
+    <body>
+        <style>
+          *{
+            margin: 0;
+            box-sizing: border-box;
+          }
+          /* body{
+            background: linear-gradient(blue red);
+          } */
+            .navbar{
+              
+              position: sticky;
+            top: 0;
+            width: 100%;
+
+            backdrop-filter: blur(0px); /* Blur effect */
+            -webkit-backdrop-filter: blur(50px); /* For Safari */
+            z-index: 1000; /* Ensure it stays on top */
+            }
+            
+            .logo{
+               height: 200px;
+               width: 120px;
+               margin-top: -50px;
+            }
+            .navbar-brand{
+                color: darkgoldenrod;
+                font-size: 50px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-top: -50px;
+                margin-left: 10px;
+                font-weight: 500;
+            }
+            .navbar-nav{
+                margin-left: 450px;
+                gap: 50px;
+                margin-top: -50px;
+                position: static;
+            }
+            .navbar ul li a{
+              color: black;
+              font-size: 20px;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .navbar ul li a:hover{
+              color: blueviolet;
+            }
+            .bgimage{
+            
+
+              position: absolute;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+            z-index: -1;
+            margin-top: -200px;
+            }
+            .Aboutus{
+              position: absolute;
+              z-index: -1;
+            }          
+            h1{
+              font-size: 50px;
+              color: black;
+              font-weight: 600;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              margin-left: 150px;
+              margin-top: 20px;
+            }
+            .p1{
+              font-size: 20px;
+              margin-left: 150px;
+              margin-top: 15px;
+            }
+
+
+            .animated-button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(238, 36, 36, 0.1);
+            border-radius: 35px;
+            margin-left: 140px;
+            margin-top: 10px;
+        }
+        .animated-button:hover {
+            background-color: #0056b3;
+            transform: translateY(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .animated-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .eyelogo{
+          margin-left: 760px;
+          margin-top: -400px;
+          width: 745px;
+        }
+
+        h2{
+          position: relative;
+            font-size: 50px;
+              color: black;
+              font-weight: 800;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              margin-top: 90px;
+              margin-left: 500px;
+              background-image: url(Assets/Images/bluewaves.jpg);
+              background-size: cover;
+              background-clip: text;
+              color: transparent;
+}
+
+.product-card {
+        border-radius: 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        margin-top: 50px;
+    }
+
+    .product-card:hover {
+        transform: translateY(-15px);
+    }
+
+    .product-image {
+        height: 200px;
+        object-fit: cover;
+        margin-left: 50px;
+        align-items: center;
+    }
+
+    .product-info {
+        padding: 20px;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        color: #555;
+        margin-bottom: 15px;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .btn-buy {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-buy:hover {
+        background-color: #0056b3;
+    }
+
+    .product-image1 {
+      height: 130px;
+        object-fit: cover;
+        margin-left: 70px;
+    }
+
+
+    h4{
+      font-size: 50px;
+      font-weight: 700;
+      color: black;
+      margin-left: 120px;
+      margin-top: 200px;
+    }
+    .productp{
+      font-size: 20px;
+      color: black;
+      margin-left: 120px;
+    }
+    .box{
+      margin-left: 750px;
+      margin-top: -250px;
+    }
+
+    .servicebutton{
+  padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(238, 36, 36, 0.1);
+            border-radius: 35px;
+            margin-top: 420px;
+            margin-left: 130px;
+            text-decoration: none;
+}
+.servicebutton:hover {
+            background-color: #0056b3;
+            transform: translateY(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .servicebutton:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h5{
+          font-size: 50px;
+          font-weight: 700;
+          margin-left: 130px;
+          margin-top: 150px;
+        }
+        .partnerp{
+          font-size: 20px;
+          color: black;
+          margin-left: 130px;
+          margin-top: 20px;
+        }
+        .requestbutton{
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(238, 36, 36, 0.1);
+            border-radius: 35px;
+            margin-left: 130px;
+            margin-top: 20px;
+            text-decoration: none;
+}
+.requestbutton:hover {
+            background-color: #0056b3;
+            transform: translateY(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .requestbutton:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .partnerimg{
+          margin-left: 750px;
+          margin-top: -230px;
+          position: relative;
+        }
+
+        .formcontainer {
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 8px;
+    height: 350px;
+    width: 300px;
+    margin-left: 520px;
+    margin-top: 30px;
+}
+
+
+.h6{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.h2about{
+  font-size: 10px;
+  color: white;
+  margin-left: 450px;
+}
+footer {
+  background-color: #333;
+  width: 100%;
+  color: #fff;
+  padding: 20px 0;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
+ 
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #ff9900;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9900;
+  color: #fff;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e68a00;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+            /* #navbarNavDropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#navbarNavDropdown a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#navbarNavDropdownt a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+
+        </style>
+<div class="navbar">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            
+        <img src="asset/img/bird-colorful-logo-gradient-vector_343694-1365.avif" alt="" class="logo">
+          <a class="navbar-brand" href="#">Mobiles</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="new.html">Home</a>
+                  </li>
+                   
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Partner & Clients">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="Assets/Images/background.jfif" alt="" class="bgimage">
+      
+
+
+</div>
+<!-- <img src="Assets/Images/background.jfif" class="img1" alt=""> -->
+<div>
+  <h1>About Us</h1>
+  <p class="p1">At our mobile shop, we offer a wide range of smartphones, tablets,<br> and accessories to meet all your needs. Whether you're looking for <br>the latest flagship model or a budget-friendly option, we've got <br>you covered.</p>
+  <button class="animated-button">Read more</button>
+  <div>
+    <img src="asset/img/ms.jpg" alt="" class="eyelogo">
+  </div>
+</div>
+
+<h2 id="product">Our Products</h2>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="product-card">
+                <img src="asset/img/pexels-photo-10141956.jpeg" alt="Product Image" class="img-fluid product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Stock</h3>
+                    <p class="product-description"> where each share represents a piece of the intricate puzzle driving the world forward.</p>
+                    <p class="product-price">$99.99</p>
+                    <button class="btn btn-buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="product-card">
+              <img src="asset/img/smart2.avif" alt="Product Image" class="img-fluid product-image">
+              <div class="product-info">
+                  <h3 class="product-title">Product Name</h3>
+                  <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+                  <p class="product-price">$89.99</p>
+                  <button class="btn btn-buy">Buy Now</button>
+              </div>
+          </div>
+      </div>
+       
+  
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+            <img src="asset/img/modern-smartphone-is-black-isolated-white-background_273893-2858.avif" alt="Product Image" class="img-fluid product-image">
+            <div class="product-info">
+                <h3 class="product-title">Product Name</h3>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+                <p class="product-price">$89.99</p>
+                <button class="btn btn-buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+  
+    <div class="col-md-4 mb-4">
+      <div class="product-card">
+          <img src="asset/img/tech-device-with-nature-background_23-2150470431.avif" alt="Product Image" class="img-fluid product-image">
+          <div class="product-info">
+              <h3 class="product-title">Product Name</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+              <p class="product-price">$69.99</p>
+              <button class="btn btn-buy">Buy Now</button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="col-md-4 mb-4">
+    <div class="product-card">
+        <img src="asset/img/eleg.avif " alt="Product Image" class="img-fluid product-image">
+        <div class="product-info">
+            <h3 class="product-title">Product Name</h3>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+            <p class="product-price">$99.99</p>
+            <button class="btn btn-buy">Buy Now</button>
+        </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4">
+      <div class="product-card">
+          <img src=" asset/img/sm.jpg" alt="Product Image" class="img-fluid product-image">
+          <div class="product-info">
+              <h3 class="product-title">Product Name</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+              <p class="product-price">$99.99</p>
+              <button class="btn btn-buy">Buy Now</button>
+          </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4 mb-4">
+      <div class="product-card">
+          <img src="asset/img/smart3.jpg" alt="Product Image" class="img-fluid product-image">
+          <div class="product-info">
+              <h3 class="product-title">Product Name</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+              <p class="product-price">$99.99</p>
+              <button class="btn btn-buy">Buy Now</button>
+          </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4 mb-4">
+      <div class="product-card">
+          <img src=" asset/img/smart2.avif" alt="Product Image" class="img-fluid product-image">
+          <div class="product-info">
+              <h3 class="product-title">Product Name</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+              <p class="product-price">$99.99</p>
+              <button class="btn btn-buy">Buy Now</button>
+          </div>
+      </div>
+    </div>
+  
+    <div class="col-md-4 mb-4">
+      <div class="product-card">
+          <img src="asset/img/smart 1.avif" alt="Product Image" class="img-fluid product-image">
+          <div class="product-info">
+              <h3 class="product-title">Product Name</h3>
+              <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor faucibus enim, in malesuada lorem.</p>
+              <p class="product-price">$99.99</p>
+              <button class="btn btn-buy">Buy Now</button>
+          </div>
+      </div>
+    </div>
+      <!-- Add more product cards here -->
+  </div>
+
+  
+</div>
+
+<div >
+  <h4 id="Service & Support">Service</h4>
+  <p class="productp">Our commitment to quality is reflected in our belief that<br> <span>"Quality means doing it right when no one is looking"</span></p>
+  <!-- <button class="servicebutton"> read more </button> -->
+  <a href="file:///C:/Users/1234/Desktop/Mycarrer/servicepage.html" class="servicebutton">Read more</a>
+  <img src="Assets/Images/boxlogo-removebg-preview.png" alt="" class="box">
+  <!-- <img src="Assets/Images/servicesupport-removebg-preview.png" alt="" class="service" > -->
+   
+</div>
+<div>
+  <h5 id="Partner & Clients">Partner</h5>
+  <p class="partnerp">Become a technology partner."At the heart of our achievements lies <br>a partnership built on trust, innovation, and a shared vision for the future." </p>
+  <a href="file:///C:/Users/1234/Desktop/Mycarrer/job.html" class="requestbutton">Request</a>
+  <!-- <button class="requestbutton">Request </button> -->
+  <img src="Assets/Images/partner-removebg-preview.png" alt="" class="partnerimg">
+</div>
+
+
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-section contact-us">
+          <h3>Contact Us</h3>
+          <p>Address: 1234 Mobile Street, Tech City, TX 78901</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: <a href="mailto:support@mobileshop.com">support@mobileshop.com</a></p>
+      </div>
+      <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+             
+              <li><a href="#">Contact Us</a></li>
+              
+          </ul>
+      </div>
+    
+      <div class="footer-section customer-service">
+          <h3>Customer Service</h3>
+          <ul>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Shipping Information</a></li>
+              <li><a href="#">Warranty and Repairs</a></li>
+              <li><a href="#">Track Order</a></li>
+          </ul>
+      </div>
+      <div class="footer-section newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form>
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Mobile Shop. All rights reserved.</p>
+      <p>For a great alternative to ChatGPT, check out <a href="https://hix.ai/chat" target="_blank">hix.ai/chat</a>.</p>
+  </div>
+</footer>
+
+
+    </body>
+</html>

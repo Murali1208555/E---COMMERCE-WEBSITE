@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Landing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<html>
+    <body>
+        <style>
+          *{
+            margin: 0;
+            box-sizing: border-box;
+          }
+          /* body{
+            background: linear-gradient(blue red);
+          } */
+            .navbar{
+              background-image: url(asset/img/eleg.avif) no-repeat;
+              position: sticky;
+            top: 0;
+            width: 100%;
+
+            backdrop-filter: blur(0px); /* Blur effect */
+            -webkit-backdrop-filter: blur(50px); /* For Safari */
+            z-index: 1000; /* Ensure it stays on top */
+            }
+            
+            .logo{
+               height: 200px;
+               width: 120px;
+               margin-top: -50px;
+            }
+            .navbar-brand{
+                color: darkgoldenrod;
+                font-size: 50px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin-top: -50px;
+                margin-left: 10px;
+                font-weight: 500;
+            }
+            .navbar-nav{
+                margin-left: 450px;
+                gap: 50px;
+                margin-top: -50px;
+                position: static;
+            }
+            .navbar ul li a{
+              color: black;
+              font-size: 20px;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .navbar ul li a:hover{
+              color: blueviolet;
+            }
+            .bgimage{
+            
+
+              position: absolute;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+            z-index: -1;
+            margin-top: -200px;
+            }
+            .Aboutus{
+              position: absolute;
+              z-index: -1;
+            }          
+            h1{
+              font-size: 50px;
+              color: black;
+              font-weight: 600;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              margin-left: 150px;
+              margin-top: 20px;
+            }
+            .p1{
+              font-size: 20px;
+              margin-left: 150px;
+              margin-top: 15px;
+            }
+
+
+            .animated-button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(238, 36, 36, 0.1);
+            border-radius: 35px;
+            margin-left: 140px;
+            margin-top: 10px;
+        }
+        .animated-button:hover {
+            background-color: #0056b3;
+            transform: translateY(5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .animated-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .eyelogo{
+          margin-left: 760px;
+          margin-top: -400px;
+          width: 745px;
+        }
+
+        h2{
+          position: relative;
+            font-size: 50px;
+              color: black;
+              font-weight: 800;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              margin-top: 90px;
+              margin-left: 500px;
+              background-image: url(Assets/Images/bluewaves.jpg);
+              background-size: cover;
+              background-clip: text;
+              color: transparent;
+}
+
+    
+.footer {
+  background-color: #333;
+  width: 100%;
+  color: #030303;
+  padding: 20px 0;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #333;
+ 
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #ff9900;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9900;
+  color: #fff;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #e68a00;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+h1{
+  margin-left: 45%;
+}
+.cloudimg{
+  margin-left: 40%;
+  margin-top: 50px;
+}
+.cloudp{
+  margin-left: 25%;
+  margin-top: 50px;
+}
+.appimg{
+  margin-left: 40%;
+  margin-top: 50px;
+}
+.appp{
+  margin-left: 33%;
+ 
+margin-top: -100px;}
+.techimg{
+  margin-left: 40%;
+  margin-top: 50px;
+}
+.techp{
+  margin-left: 25%;
+  margin-top: 50px;
+}
+h3{
+  text-align: center;
+  margin-top: 50px;
+}
+.techp{
+  margin-right: 150px;
+}
+
+
+        </style>
+<div class="navbar">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            
+        <img src="asset/img/bird-colorful-logo-gradient-vector_343694-1365.avif" alt="" class="logo">
+          <a class="navbar-brand" href="#">Mobiles</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="new.html">Home</a>
+                  </li>
+                   
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Partner & Clients">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="Assets/Images/background.jfif" alt="" class="bgimage">
+
+</div>
+
+<div >
+  <h1 id="Service & Support">Service</h1>
+  
+  <div>
+    <img src="asset/img/repair.jpeg" alt="" class="cloudimg" >
+    <p class="cloudp" >DR Offers Cloud Computing in a Process of delivering/enabling scalable, expandable <br>and almost perfectly elastic software services using internet technologies. Tx Provides Self Service capabilities <br> to users with scalable features to increase usage on requirement.</p>
+    </div>
+    <div>
+    <img src="asset/img/repair2.jpeg" alt="" class="appimg" >
+    <h2>Application Development</h2>
+    <p class="appp" >We offer development teams which are adept at all the latest technologies. <br> With these techs, we make an Application development extremely interactive and quick to develop. <br> DR provides highly-customized application development services to empower your business.</p>
+    </div>
+    <div>
+        <img src="asset/img/repair3.jpeg" alt="" class="techimg">
+        <h3>Technical Support</h3>
+        <p class="techp">Tx helps you to achieve in your IT strategy by providing you system integration, testing,<br> application development and management services. Tx Technical Support Services <br> helps to maintain higher availability and IT Performance with Integrated maintanance, support and managed Services.</p>
+    </div>
+  
+   
+</div>
+
+
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-section contact-us">
+          <h3>Contact Us</h3>
+          <p>Address: 1234 Mobile Street, Tech City, TX 78901</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: <a href="mailto:support@mobileshop.com">support@mobileshop.com</a></p>
+      </div>
+      <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About Us</a></li>
+             
+              <li><a href="#">Contact Us</a></li>
+              
+          </ul>
+      </div>
+    
+      <div class="footer-section customer-service">
+          <h3>Customer Service</h3>
+          <ul>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Shipping Information</a></li>
+              <li><a href="#">Warranty and Repairs</a></li>
+              <li><a href="#">Track Order</a></li>
+          </ul>
+      </div>
+      <div class="footer-section newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form>
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Mobile Shop. All rights reserved.</p>
+      <p>For a great alternative to ChatGPT, check out <a href="https://hix.ai/chat" target="_blank">hix.ai/chat</a>.</p>
+  </div>
+</footer>
+
+
+    </body>
+</html>
